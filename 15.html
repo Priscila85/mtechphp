@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  <p> configuração de caractere </p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title>
+</head>
+<body>
+   <script>
+// Ler 3 numeros do usuario
+// Encontar o maior numero entre 3 numeros
+
+const numero1 = +(prompt("Digite um número"));   // se usa const quando voce não quer mudar a variavel.
+const numero2 = +(prompt("Digite um número"));  //Vc so usa o + antes do prompt para digitar numero
+const numero3 = +(prompt("Digite um número"));
+
+//if(numero1 >numero2) { // quando se usa o if vc só pode comparar duas coisas.
+    //if(numero1 > numero3){
+        //alert(" Número 1 é maior")
+        //}
+    //}
+
+   if(numero1 >= numero2 && numero1 >= numero3){  // se não for o 1
+      alert("Número 1 é maior")
+}
+
+   else if(numero2 >= numero3){   //se não for o 2
+    alert("Número 2 é maior")
+}
+ else{
+    alert("Número 3 é maior") // é o
+}
+
+
+// só pode entrar no else se o if for numero for negativo
+
+   </script> 
+</body>
+</html>
