@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Document</title>
+</head>
+<body>
+    <script>
+//qual é a sequencia que existe 
+//3 5 8 13 21 34
+// para construir o codigo eu preciso da variavel 
+// proximo/ atual/ anterior
+
+//proximo = atual + anterior
+// anterior = atual
+//atual = proximo
+
+anterior = 0
+atual = 1
+proximo = anterior + atual
+//proximo = numero Fibonacci
+while(proximo <= 2000){
+    document.write(proximo+"<br>")
+anterior = atual
+atual = proximo
+proximo = atual + anterior
+}
+   </script>
+    
+</body>
+</html>

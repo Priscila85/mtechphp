@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title> Pedra, Papel e Tesoura </title>
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>JOGUNHO</title>
+</head>
+<body>
+    <h1> Pedra, Papel e Tesoura </h1>
+   <script>
+
+const jogador1 = (prompt(" Jogador 1 \n Pedra, Papel ou Tesoura? "));   
+const jogador2 = (prompt("Jogador 2 \n Pedra, Papel ou Tesoura? "));  
+
+      if(jogador1 == jogador2){ 
+      alert(" Empate ")
+}
+      else if(jogador1 == "papel" && jogador2 == "pedra"){ 
+      alert(" Vence Papel")
+}
+     else if(jogador1 == "papel" && jogador2 == "tesoura"){  
+    alert(" Vence Tesoura")
+}
+
+else if(jogador1 == "pedra" && jogador2 == "papel"){  
+    alert(" Vence Papel")
+}
+
+else if(jogador1 == "pedra" && jogador2 == "tesoura"){  
+    alert(" Vence Pedra")
+}
+else if(jogador1 == "tesoura" && jogador2 == "pedra"){  
+    alert(" Vence Pedra")
+}
+else if(jogador1 == "tesoura" && jogador2 == "papel"){  
+    alert(" Vence Tesoura")
+}
+ else{
+    alert(" Opção inválida") 
+}
+
+</script> 
+</body>
+</html>
