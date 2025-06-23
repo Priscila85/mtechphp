@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+//Crie um jogo de par ou ímpar onde o computador irá gerar um número aleatório e o
+//usuário irá digitar um número. Após digitar o número, o programa irá utilizar um vetor
+//para resolver o jogo. Se a soma dos números for par, o usuário vence. Se for ímpar, o
+//computador vence.
+
+     const usuario = +(prompt(" Digite um número"));
+     pc = Math.floor(Math.random()*50)
+     
+     function sorte(usuario, pc) {
+       soma = usuario + pc
+       if(soma % 2 == 0){
+        alert("Usuario Ganhou")
+     }
+     else{
+        alert("Usuario Perdeu")
+     }
+    }
+    sorte(usuario, pc)
+</script>
+    
+</body>
+</html>
