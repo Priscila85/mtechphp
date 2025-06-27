@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+   //multiplicação precisa ser = 1
+        //Construa uma página/programa onde o usuário digitará dez números e o programa
+        //somará e calculará a média dos números digitados.
+
+        lista = []
+        qtd = 10
+        soma = 0
+
+        for (i = 0; i < qtd; i++) {
+            lista[i] = +(prompt(" Digite um número"));
+            //soma= da esquerda só recebe o valor de soma + lista[i]
+            soma = soma + lista[i]
+        } // atalho para não escrever o de cima use : soma += lista[i]
+
+media = soma/qtd
+           
+        document.write(' A soma é: ' + soma +
+             '\nA média é: ' + media)
+
+
+
+
+    </script>
+</body>
+
+</html>

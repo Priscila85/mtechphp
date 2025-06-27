@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Construa uma página/programa onde o usuário digitará seis números em um array e,
+        //depois, esses números devem ser exibidos na tela na ordem digitada.
+        lista = []
+        // O for no JavaScript serve para repetir um bloco de código, um número determinado de vezes. 
+        // Ele é uma estrutura de laço de repetição (loop) muito usada quando você sabe quantas vezes quer repetir algo.
+        // i= é uma variavel para contagem 
+        //< menor// > maior
+        // for(i é "repita controlando por i", 
+        // i < 6 "enquanto i for menor do que 6",
+        // i++ "acrescente 1 em i a cada passagem no inicio"
+        // // "
+        for (i = 0; i < 6; i++) {
+            lista[i] = +(prompt(" Digite um número"));
+        }
+
+        lista.forEach(ordem => {
+            document.write("<h1>" + ordem + "<br><\h1>")
+
+        });
+
+    </script>
+</body>
+
+</html>
