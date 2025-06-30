@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação</title>
+</head>
+
+<body>
+    <h1>Avaliação</h1>
+
+    <h2>Os numeros menores que 15 são:</h2>
+
+
+    <script>
+        // Usuario digita 10 numeros
+        // Qual deles são menores  
+        // que 15
+
+        lista = [] // lista de elementos
+        qtd = 10  // quantidade de elementos da lista
+        contador = 0  // conta os numeros da lista
+
+        for (i = 0; i < qtd; i++) {
+            lista[i] = +(prompt("Digite um numero")) // codigo para ser digitado o numero quando for varias vezes.
+
+        }
+
+        lista.sort((a, b) => a - b);//para ordenar a lista em ordem crescente antes de mostrar apenas os números menores que 15.
+        lista.forEach(numero => { //Executar algo para cada item (sem interrupção ou retorno).
+            if (numero < 15) { // se o numero for menor que 15 mostre no documento
+                document.write("<h3>" + numero + "<br></h3>"); // mostra os numeros menores que 15.
+            }
+        });
+
+
+
+    </script>
+</body>
+
+</html>
