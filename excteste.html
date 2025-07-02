@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador de Conta Bancária</title>
+</head>
+<body>
+  <h1>Simulador de Conta Bancária</h1>
+
+  <h3>Transferência de Conta 1 para Conta 2</h3>
+  <label for="valorTransferencia">Valor:</label>
+  <input type="number" id="valorTransferencia"><br><br>
+  <button onclick="transferir()">Transferir</button>
+
+  <h3>Saldos</h3>
+  <p id="saldoConta1"></p>
+  <p id="saldoConta2"></p>
+
+  <script>
+    class Conta {
+      constructor(titular, numConta, saldo = 0) {
+        this.titular = titular;
+        this.numConta = numConta;
+        this.saldo = saldo;
+      }
+
+      depositar(valor) {
+        if (valor > 0) {
+          this.saldo += valor;
+        } else {
+          alert("Valor inválido para depósito.");
+        }
+      }
+
+      realizarSaque(valor) {
+        if (valor > 0 && valor <= this.saldo) {
+          this.saldo -= valor;
+        } else {
+          alert("Saque não permitido: valor inválido ou saldo insuficiente.");
+        }
+      }
+
+      transferencia(valor, conta) {
+        if (valor > 0 && valor <= this.saldo) {
+          this.saldo -= valor;
+          conta.saldo += valor;
+          alert(`Transferência de R$${valor} realizada com sucesso!`);
+        } else {
+          alert("Transferência não realizada: valor inválido ou saldo insuficiente.");
+        }
+      }
+    }
+
+    // Criando duas contas
+    const conta1 = new Conta("Ana", "12345", 500);
+    const conta2 = new Conta("Carlos", "67890", 300);
+
+    function atualizarSaldos() {
+      document.getElementById("saldoConta1").innerText = `Conta 1 (Ana): R$${conta1.saldo}`;
+      document.getElementById("saldoConta2").innerText = `Conta 2 (Carlos): R$${conta2.saldo}`;
+    }
+
+    function transferir() {
+      const valor = parseFloat(document.getElementById("valorTransferencia").value);
+      conta1.transferencia(valor, conta2);
+      atualizarSaldos();
+    }
+
+    // Mostrar saldos iniciais
+    atualizarSaldos();
+  </script>
+</body>
+</html>
