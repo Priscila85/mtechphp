@@ -5,41 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Curriculo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        header{
-            text-align:center;
+        .comic-relief-regular {
+            font-family: "Comic Relief", system-ui;
+            font-weight: 400;
+            font-style: normal;
         }
-        h1{
-            color:blueviolet;
-            font-size: 30px;
-            font-style: italic;
-            
-            }
 
-        li{
-            font-style: italic;
-            font-size: 20px;
+        header {
+            text-align: center;
         }
-        p{
-            font-style: italic;
-            font-size: 20px; 
+
+        .titulo-principal {
+            color: #AF0FDB;
+            font-size: 30px;
+            font-style: oblique;
+
         }
-           div.resumo{
-        color:pink
-       }
+
+        #subtitulo {
+            color: #1C00DB;
+            text-align: center;
+            font-style: normal;
+            font-size: 25px;
+            font-family: pacific;
+        }
+        
     </style>
 </head>
 
-<body>
-    <img src="imagens/20221224_202033.jpg" alt="Minha imagem"> 
+<body class="comic-relief-regular">
+    <figure>
+        <img src="2020-03-14.jpg" width="150px"
+            alt="A imagem mostra uma mulher sorrindo, sentada em um restaurante. Ela tem cabelo cacheado, usa um vestido estampado com laço e está com os braços cruzados sobre a mesa. O ambiente é aconchegante e bem iluminado."
+            title="Foto da Ana Priscila">
+        <figcaption>
+            <p>Figura 1. Imagem do Candidato</p>
+        </figcaption>
+
+    </figure>
+
+
     <header>
-        <h1>Ana Priscila Paulino Costa de Souza</h1>
-        <h2>anahcc22@gmail.com</h2>
-        <h2>(21) 96537-7743</h2>
+
+        <h1 class="titulo-principal">Ana Priscila Paulino Costa de Souza</h1>
+        <h2 class="titulo-principal" id="subtitulo">anahcc22@gmail.com</h2>
+        <h2 class="titulo-principal" id="subtitulo">(21) 96537-7743</h2>
     </header>
 
+
     <section>
-        <div class="resumo">
+        <div>
             <h2>Resumo</h2>
             <p>Profissional de atendimento ao cliente responsável e confiável, com vasta experiência.
                 Possui agilidade para resolução de conflitos, experiência em atendimento SAC,
@@ -118,6 +137,10 @@
 
 
         </div>
+        <div class="video" style="text-align: center;">
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/4BobAFLxBEQ?si=bFYDMHoqWpYiqm5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.155443358865!2d-43.19645647586618!3d-22.98131076995828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd53e5e31910d%3A0xd77bc17c87217717!2sR.%20S%C3%A1%20Ferreira%2C%2073%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022071-100!5e0!3m2!1spt-BR!2sbr!4v1752245211014!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
     </section>
     <footer>
         <p>Curriculo de Ana Priscila &copy;2025</p>
