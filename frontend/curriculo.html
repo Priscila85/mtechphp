@@ -8,48 +8,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Relief:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        .comic-relief-regular {
-            font-family: "Comic Relief", system-ui;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        .titulo-principal {
-            color: #AF0FDB;
-            font-size: 30px;
-            font-style: oblique;
-
-        }
-
-        #subtitulo {
-            color: #1C00DB;
-            text-align: center;
-            font-style: normal;
-            font-size: 25px;
-            font-family: pacific;
-        }
-        
-    </style>
+    <link href="style.css" rel="stylesheet"> <!--CSS externo-->
 </head>
 
 <body class="comic-relief-regular">
     <figure>
+        <!-- criei uma tag para colocar imagem-->
         <img src="2020-03-14.jpg" width="150px"
-            alt="A imagem mostra uma mulher sorrindo, sentada em um restaurante. Ela tem cabelo cacheado, usa um vestido estampado com laço e está com os braços cruzados sobre a mesa. O ambiente é aconchegante e bem iluminado."
+            alt="A imagem mostra uma mulher sorrindo, sentada em um restaurante. Ela tem cabelo cacheado, 
+            usa um vestido estampado com laço e está com os braços cruzados sobre a mesa. O ambiente é aconchegante e bem iluminado."
             title="Foto da Ana Priscila">
         <figcaption>
             <p>Figura 1. Imagem do Candidato</p>
-        </figcaption>
+        </figcaption> <!--tag semantica-->
 
-    </figure>
+    </figure> <!-- criei uma tag semantica para imagem-->
+    <nav class="menu" id="home"> <!-- criei uma tag para criar links-->
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="https://www.rj.senac.br" target="_blank">Site do Senac</a>
+            </li>
+            <li>
+                <a href="#apresentacao">Apresentação</a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/priscila-souza-b2483b32a/" target="_blank">Linkdin</a>
+            </li>
+        </ul>
+    </nav>
 
 
-    <header>
+    <header> <!--tag semantica cabeçalho-->
 
         <h1 class="titulo-principal">Ana Priscila Paulino Costa de Souza</h1>
         <h2 class="titulo-principal" id="subtitulo">anahcc22@gmail.com</h2>
@@ -57,7 +49,7 @@
     </header>
 
 
-    <section>
+    <section> <!--tag semantica para dividir em sessões para que alterações so ocorra nesse campo-->
         <div>
             <h2>Resumo</h2>
             <p>Profissional de atendimento ao cliente responsável e confiável, com vasta experiência.
@@ -136,15 +128,48 @@
             </ul>
 
 
+
+        </div><!--style inline e quando é usado dentro da tag-->
+        <!--foi inserido um video-->
+        <div class="video" style="text-align: center;" id="apresentacao">
+            <iframe width="460" height="315" src="https://www.youtube.com/embed/4BobAFLxBEQ?si=bFYDMHoqWpYiqm5o"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-        <div class="video" style="text-align: center;">
-            <iframe width="460" height="315" src="https://www.youtube.com/embed/4BobAFLxBEQ?si=bFYDMHoqWpYiqm5o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.155443358865!2d-43.19645647586618!3d-22.98131076995828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd53e5e31910d%3A0xd77bc17c87217717!2sR.%20S%C3%A1%20Ferreira%2C%2073%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022071-100!5e0!3m2!1spt-BR!2sbr!4v1752245211014!5m2!1spt-BR!2sbr" width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+        <!--foi inserido o maps-->
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.155443358865!2d-43.19645647586618!3d-22.98131076995828!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bd53e5e31910d%3A0xd77bc17c87217717!2sR.%20S%C3%A1%20Ferreira%2C%2073%20-%20Copacabana%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2022071-100!5e0!3m2!1spt-BR!2sbr!4v1752245211014!5m2!1spt-BR!2sbr"
+            width="300" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
-    <footer>
+
+    <footer> <!--tag semantica rodapé-->
         <p>Curriculo de Ana Priscila &copy;2025</p>
     </footer>
+    <form>
+
+        <label>Nome Completo:</label> <!-- criei um campo de formulario-->
+
+        <input type="text"><!-- criei uma entrada para texto-->
+
+        <label>E-mail</label> <!-- criei um campo de formulario-->
+
+        <input type="email"> <!-- criei uma entrada para email-->
+
+        <label>Cidade</label> <!-- criei um campo de formulario-->
+        <select name="cidade"> <!-- criei um seletor de cidade-->
+            <option>Rio de Janeiro</option> <!-- criei opç~es de cidade-->
+            <option>Niteroi</option>
+            <option>Nova Friburgo</option>
+        </select>
+
+        <p>
+            <textarea cols="50"></textarea> <!-- criei um campo para digitar texto-->
+        </p>
+        <input type="submit" value="Enviar"> <!-- criei botão enviar-->
+        <button type="reset">Limpar</button> <!-- criei botão limpar-->
+    </form>
 
 </body>
 
