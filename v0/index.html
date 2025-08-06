@@ -12,26 +12,30 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- CSS principal do tema (inclui Bootstrap) -->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/mystyle.css" rel="stylesheet">
     </head>
-    <body>
+    <body class="cor-corpo">
+        
         
         <!-- Navegação -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Mimi Lovers Shop</a>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-topo">
+           
+        <div class="container px-4 px-lg-5">
+                <a class="navbar-brand mi-bolder" href="#!">Mimi Lovers Shop</a>
                 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 ">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link texto-rosa" href="#!">Sobre</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Comprar</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Todos os produtos</a></li>
+                                <li><a class="dropdown-item texto-rosa" href="#!">Todos os produtos</a></li>
                                 <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">Itens populares</a></li>
-                                <li><a class="dropdown-item" href="#!">Novas Chegadas</a></li>
+                                <li><a class="dropdown-item texto-rosa" href="#!">Itens populares</a></li>
+                                <li><a class="dropdown-item texto-rosa" href="#!">Novas chegadas</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -46,11 +50,12 @@
             </div>
         </nav>
         <!-- Cabeçalho -->
-        <header class="bg-dark py-5">
+        <header class="bg-pink py-5">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
+                <div class="text-center text-roxo">
                     <h1 class="display-4 fw-bolder">Coleção Exclusiva da Mimi Lovers Shop</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">Os itens mais fofos e estilosos da gata mais charmosa da internet estão aqui! Camisetas, xícaras e muito mais — tudo feito com amor para os verdadeiros Mimi Lovers.</p>
+                    <p class="lead fw-normal text-roxo-50 mb-0">Os itens mais fofos e estilosos da gata mais charmosa da internet estão aqui! Camisetas, xícaras e muito mais — 
+                        tudo feito com amor para os verdadeiros Mimi Lovers.</p>
                 </div>
             </div>
         </header>
@@ -59,45 +64,15 @@
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                     <div class="col mb-5">
-                        <div class="card h-100">
+                        <div class="card h-100 mi-bolder">
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/bolsa.jpg"  alt="..." />
+                            <img class="card-img-top" src="assets/bolsa.jpg"  alt="Bolsa ecológica com a frase Gato é perfeito, afinal errar é humano." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Bolsa</h5>
+                                    <h5 class="mi-bolder">Bolsa</h5>
                                     <!-- Preço do produto -->
-                                    R$30,00
-                                </div>
-                            </div>
-                            <!-- Ações do produto -->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Opinião</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Selo de promoção -->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Promoção</div>
-                            <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/bone.jpg" alt="..." />
-                            <!-- Detalhes do produto -->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Boné</h5>
-                                    <!-- Avaliações do produto -->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Preço do produto -->
-                                    <span class="text-muted text-decoration-line-through">$R$50,00</span>
                                     R$30,00
                                 </div>
                             </div>
@@ -112,14 +87,44 @@
                             <!-- Selo de promoção -->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Promoção</div>
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/caderno.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/bone (1).jpg" alt="Boné rosa com a frase LOUCA DOS GATOS." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Caderno</h5>
+                                    <h5 class="mi-bolder">Boné</h5>
+                                    <!-- Avaliações do produto -->
+                                    <div class="d-flex justify-content-center small text-warning mb-2">
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                        <div class="bi-star-fill"></div>
+                                    </div>
                                     <!-- Preço do produto -->
-                                    <span class="text-muted text-decoration-line-through">R$25,00</span>
+                                    <span class="text-decoration-line-through">$R$50,00</span>
+                                    R$30,00
+                                </div>
+                            </div>
+                            <!-- Ações do produto -->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5">
+                        <div class="card h-100">
+                            <!-- Selo de promoção -->
+                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Promoção</div>
+                            <!-- Imagem do produto -->
+                            <img class="card-img-top" src="assets/caderno (1).jpg" alt="Caderno com ilustração de dois gatos pretos e o logo gatocafé." />
+                            <!-- Detalhes do produto -->
+                            <div class="card-body p-4">
+                                <div class="text-center text-pink">
+                                    <!-- Nome do produto -->
+                                    <h5 class="mi-bolder">Caderno</h5>
+                                    <!-- Preço do produto -->
+                                    <span class="text-decoration-line-through">R$25,00</span>
                                     R$20,00
                                 </div>
                             </div>
@@ -132,12 +137,12 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/camisa.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/camisa.jpg" alt="Camiseta preta com a frase colorida Gato é perfeito afinal errar é humano e ilustrações de gatinhos." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Camiseta</h5>
+                                    <h5 class="mi-bolder">Camiseta</h5>
                                     <!-- Avaliações do produto -->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -161,14 +166,14 @@
                             <!-- Selo de promoção -->
                             <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Promoção</div>
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/canecadevidro.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/canecadevidro.jpg" alt="Caneca de vidro com ilustração de rosto de gato e espuma decorada com pegada de pata." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Caneca de vidro</h5>
+                                    <h5 class="mi-bolder">Caneca de vidro</h5>
                                    <!-- Preço do produto -->
-                                    <span class="text-muted text-decoration-line-through">R$30,00</span>
+                                    <span class="text-decoration-line-through">R$30,00</span>
                                     R$25,00
                                 </div>
                             </div>
@@ -181,19 +186,19 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/casaco.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/casaco (1).jpg" alt="Casaco claro com ilustração de um gato de suéter rosa segurando uma caneca." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Casaco</h5>
+                                    <h5 class="mi-bolder">Casaco</h5>
                                     <!-- Preço do produto -->
                                     R$250,00
                                 </div>
                             </div>
                             <!-- Ações do produto -->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Opinião</a></div>
+                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Comprar</a></div>
                             </div>
                         </div>
                     </div>
@@ -205,9 +210,9 @@
                             <img class="card-img-top" src="assets/xicara.jpg" alt="..." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Xicara</h5>
+                                    <h5 class="mi-bolder">Xicara</h5>
                                     <!-- Avaliações do produto -->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -217,7 +222,7 @@
                                         <div class="bi-star-fill"></div>
                                     </div>
                                     <!-- Preço do produto -->
-                                    <span class="text-muted text-decoration-line-through">R$30,00</span>
+                                    <span class="text-decoration-line-through">R$30,00</span>
                                     R$25,00
                                 </div>
                             </div>
@@ -230,12 +235,12 @@
                     <div class="col mb-5">
                         <div class="card h-100">
                             <!-- Imagem do produto -->
-                            <img class="card-img-top" src="assets/pingente.jpg" alt="..." />
+                            <img class="card-img-top" src="assets/pingente (1).jpg" alt="..." />
                             <!-- Detalhes do produto -->
                             <div class="card-body p-4">
-                                <div class="text-center">
+                                <div class="text-center text-pink">
                                     <!-- Nome do produto -->
-                                    <h5 class="fw-bolder">Colar</h5>
+                                    <h5 class="mi-bolder">Colar</h5>
                                     <!-- Avaliações do produto -->
                                     <div class="d-flex justify-content-center small text-warning mb-2">
                                         <div class="bi-star-fill"></div>
@@ -259,7 +264,7 @@
         </section>
         <!-- Footer(Rodapé)-->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">2025 Mimi Lovers Shop 🐾 — Todos os direitos reservados.</p></div>
+            <div class="container"><p class="m-0 text-center text-white">&copy;2025 Mimi Lovers Shop🐾 — Todos os direitos reservados.</p></div>
         </footer>
           <!-- JavaScript do Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>

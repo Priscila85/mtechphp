@@ -1,0 +1,34 @@
+.bg-pink {
+    background-color: rgb(250, 129, 204);
+    
+    
+    
+}
+.mi-bolder {
+    color: #FF69B4; /* rosa pink */
+    
+}
+
+.text-roxo{
+    color: #f60f82;
+}
+.text-pink{
+    color: #f60f82;
+}
+.cor-corpo{
+    background-color: aqua;
+}
+.bg-topo{
+ background-color: black;
+}
+.texto-rosa {
+    color: #FF69B4;
+  }
+
+  .navbar-nav .nav-link {
+    color: #FF69B4 !important;
+  }
+
+  .navbar-brand {
+    color: #FF69B4 !important;
+  }
