@@ -1,12 +1,11 @@
 .bg-pink {
     background-color: rgb(250, 129, 204);
-    
-    
-    
+    background-image: url("../assets/gatinha.png");/* .. é para ir para a pasta raiz */
+    background-repeat: no-repeat;
+    background-size: 18%;
 }
 .mi-bolder {
-    color: #FF69B4; /* rosa pink */
-    
+    color: #ff69b4 ; /* rosa pink */
 }
 
 .text-roxo{
@@ -32,3 +31,19 @@
   .navbar-brand {
     color: #FF69B4 !important;
   }
+  /* criando um botão para o whatsapp que está  do lado direito e se movimenta junto com a rolagem da pagina (position: fixed)*/
+  .whatsapp img{
+    width: 40px;
+    position: fixed;
+    bottom: 100px;
+    right:15px;
+   }
+   .instagram img{
+    position: fixed;
+    top: 20px;     /* distância do topo */
+    right: 20px;   /* distância da direita */
+    z-index: 1000; /* garante que fique por cima dos outros elementos */
+    width: 40px;
+}
+
+ 
